@@ -8,10 +8,10 @@
     <title>Document</title>
 </head>
 
-<body>
-    <aside>
+<body id="body">
+    <aside id="formulario">
         <div class="boton-tema">
-            <button class="theme dark"></button>
+            <button class="modo-tema dark" id="theme"></button>
         </div>
 
 
@@ -47,5 +47,10 @@
     </aside>
    
 </body>
-
+<script>
+    document.getElementById("theme").addEventListener("click", cambiar => {
+       document.getElementById("body").classList.toggle("theme"); 
+       document.getElementById("theme").classList.toggle("white"); 
+    })
+</script>
 </html>

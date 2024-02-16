@@ -28,7 +28,7 @@ aside {
     justify-content: end;
 }
 
-.theme {
+.modo-tema {
     width: 30px;
     height: 30px;
     border-radius: 100%;
@@ -38,6 +38,10 @@ aside {
 
 .dark {
     background-color: black;
+}
+.white {
+    background-color: white;
+    transition: 2s ease;
 }
 
 .pantalla {
@@ -79,4 +83,9 @@ aside {
     height: 170px !important;
     position: absolute;
     border-radius: 20px !important;
+}
+
+.theme{
+    background-color: black;
+    transition: 2s ease;
 }
