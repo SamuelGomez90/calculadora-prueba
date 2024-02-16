@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <aside>
+        <div class="boton-tema">
+            <button class="theme dark"></button>
+        </div>
+
+
+        <form action="" name="calculadora">
+            <div class="pantalla">
+                <input id="contadorInput" name="score" value="" readonly></input>
+            </div>
+            <input type="reset" value="C" class="botones" ></input>
+            <input type="button" value="/" class="botones" onclick="document.calculadora.score.value+='/'"></input>
+            <input type="button" value="*" class="botones" onclick="document.calculadora.score.value+='*'"></input>
+            <input type="button" value="X" class="botones" ></input>
+            <br/>
+            <input type="button" value="7" class="botones" onclick="document.calculadora.score.value+='7'"></input>
+            <input type="button" value="8" class="botones" onclick="document.calculadora.score.value+='8'"></input>
+            <input type="button" value="9" class="botones" onclick="document.calculadora.score.value+='9'"></input>
+            <input type="button" value="-" class="botones" onclick="document.calculadora.score.value+='-'"></input>
+            <br/>
+            <input type="button" value="4" class="botones" onclick="document.calculadora.score.value+='4'"></input>
+            <input type="button" value="5" class="botones" onclick="document.calculadora.score.value+='5'"></input>
+            <input type="button" value="6" class="botones" onclick="document.calculadora.score.value+='6'"></input>
+            <input type="button" value="+" class="botones" onclick="document.calculadora.score.value+='+'"></input>
+            <br/>
+            <input type="button" value="1" class="botones" onclick="document.calculadora.score.value+='1'"></input>
+            <input type="button" value="2" class="botones" onclick="document.calculadora.score.value+='2'"></input>
+            <input type="button" value="3" class="botones" onclick="document.calculadora.score.value+='3'"></input>
+            <input type="button" value="=" class="botones igual" onclick="document.calculadora.score.value=eval(document.calculadora.score.value)"></input>
+            <br/>
+            <input type="button" value="." class="botones" onclick="document.calculadora.score.value+='.'"></input>
+            <input type="button" value="0" class="botones" onclick="document.calculadora.score.value+='0'"></input>
+            <input type="button" value="00" class="botones" onclick="document.calculadora.score.value+='00'"></input>
+        </form>
+
+    </aside>
+   
+</body>
+
+</html>

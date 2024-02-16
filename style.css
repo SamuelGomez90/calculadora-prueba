@@ -1,0 +1,82 @@
+:root {
+    --primary: #723CD0;
+    --secondary: #B291EB;
+    --accent: #864EE8;
+    --fuente: 'Cascadia Code';
+}
+
+* {
+    font-family: var(--fuente);
+}
+
+body {
+    background-color: rgb(244, 230, 125);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+aside {
+    padding: 15px;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.boton-tema {
+    display: flex;
+    justify-content: end;
+}
+
+.theme {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    border: none;
+    cursor: pointer;
+}
+
+.dark {
+    background-color: black;
+}
+
+.pantalla {
+    height: 80px;
+    margin: 30px 10px;
+    /* background-color: var(--primary); */
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.pantalla input {
+    width: 300px;
+    font-size: 80px;
+    text-align: end;
+    border: none;
+    color: black;
+}
+
+.botones {
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+    border-radius: 100%;
+    cursor: pointer;
+    /* background-color: var(--accent); */
+    border: none;
+    font-size: 30px;
+}
+
+.botones:hover {
+    color: white;
+    background-color: var(--primary);
+    transition: 0.3s;
+}
+
+.igual {
+    height: 170px !important;
+    position: absolute;
+    border-radius: 20px !important;
+}
